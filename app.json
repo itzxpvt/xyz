@@ -1,0 +1,26 @@
+{
+  "name": "Telegram Execution Bot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID obtained from https://my.telegram.org/",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash obtained from https://my.telegram.org/",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "The token for your Telegram bot from BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI used for storing bot data",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
